@@ -1,0 +1,20 @@
+{
+  "name": "causal-boundary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "tsx benchmark/demo-incident.ts",
+    "demo:pace": "tsx benchmark/demo-incident.ts --pace",
+    "benchmark": "tsx benchmark/run.ts",
+    "benchmark:live-llm": "CAUSAL_BOUNDARY_LIVE_LLM=1 tsx benchmark/run.ts",
+    "test:chatgpt": "tsx benchmark/chatgpt-live.ts",
+    "test:gemini": "tsx benchmark/gemini-live.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
